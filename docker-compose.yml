@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  openweather:
+    build: .
+    ports: 
+      - 8000:8000
+    volumes:
+      - .:/app
+    links: 
+      - mongo-db
+  mongo-db:
+    image: mongo
+    container_name: mongo-db
+    environment:
+    - MONGO_INITDB_DATABASE=openweather
+    - MONGO_INITDB_ROOT_USERNAME=admin
+    - MONGO_INITDB_ROOT_PASSWORD=password
+    ports:
+    - 27017-27019:27017-27019
+
+

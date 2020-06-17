@@ -1,0 +1,39 @@
+{
+  "name": "openweather",
+  "version": "1.0.0",
+  "description": "openweather with jwt auth",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect-brk server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narenaryan/node-jwt-integ.git"
+  },
+  "keywords": [
+    "node",
+    "jwt",
+    "auth"
+  ],
+  "author": "Naren Arya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narenaryan/node-jwt-integ/issues"
+  },
+  "homepage": "https://github.com/narenaryan/node-jwt-integ#readme",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongodb": "^3.5.9",
+    "node-fetch": "^2.6.0"
+  }
+}
